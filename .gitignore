@@ -25,8 +25,9 @@ npm-debug.log*
 .DS_Store
 Thumbs.db
 
-# Large binaries (placer localement après EAS build)
+# APK : seul le build distribué via le site est versionné
 *.apk
+!frontend/public/bloody-cross.apk
 !frontend/public/README-APK.txt
 
 # IDE
