@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Env / secrets
+backend/config/env.php
+frontend/.env
+frontend/.env.*
+apk/.env
+.env
+.env.*
+
+# Build / Expo
+dist/
+frontend/dist/
+.expo/
+apk/.expo/
+web-build/
+*.jks
+*.keystore
+
+# Logs / OS
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# Large binaries (placer localement après EAS build)
+*.apk
+!frontend/public/README-APK.txt
+
+# IDE
+.idea/
+.vscode/
+*.swp

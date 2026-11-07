@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "Bloody Cross",
+    "slug": "merde-backup",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "merdebackup",
+    "android": {
+      "package": "com.merde.backup",
+      "permissions": [
+        "READ_MEDIA_IMAGES",
+        "READ_EXTERNAL_STORAGE",
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "WAKE_LOCK",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_DATA_SYNC",
+        "RECEIVE_BOOT_COMPLETED",
+        "POST_NOTIFICATIONS",
+        "REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.WAKE_LOCK",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_VISUAL_USER_SELECTED",
+        "android.permission.ACCESS_MEDIA_LOCATION",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_MEDIA_AUDIO"
+      ]
+    },
+    "plugins": [
+      "expo-dev-client",
+      "expo-background-fetch",
+      "./plugins/withBackgroundActions",
+      "expo-status-bar",
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Bloody Cross a besoin d’accéder à vos photos pour l’envoi continu.",
+          "savePhotosPermission": false,
+          "isAccessMediaLocationEnabled": true
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "a282e727-5b32-4e4b-9aac-0f3cfad164de"
+      }
+    }
+  }
+}
